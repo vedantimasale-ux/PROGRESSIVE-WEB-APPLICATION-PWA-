@@ -1,36 +1,15 @@
-# wrappy
+# PROGRESSIVE-WEB-APPLICATION-(PWA)
 
-Callback wrapping utility
+*COMPANY* : CODTECH IT SOLUTION
 
-## USAGE
+*NAME* : VEDANTI KRUSHNAJI MASALE 
 
-```javascript
-var wrappy = require("wrappy")
+*INTERN ID* : CTIS5346
 
-// var wrapper = wrappy(wrapperFunction)
+*DOMAIN* : FULL STACK WEB DEVELOPMENT
 
-// make sure a cb is called only once
-// See also: http://npm.im/once for this specific use case
-var once = wrappy(function (cb) {
-  var called = false
-  return function () {
-    if (called) return
-    called = true
-    return cb.apply(this, arguments)
-  }
-})
+*DURATION* : 4 WEEKS
 
-function printBoo () {
-  console.log('boo')
-}
-// has some rando property
-printBoo.iAmBooPrinter = true
+*MENTOR* : NEELA SANTHOSH KUMAR
 
-var onlyPrintOnce = once(printBoo)
-
-onlyPrintOnce() // prints 'boo'
-onlyPrintOnce() // does nothing
-
-// random property is retained!
-assert.equal(onlyPrintOnce.iAmBooPrinter, true)
-```
+##BUILD A PROGRESSIVE WEB APPLICATION (PWA) FOR AN E-COMMERCE PLATFORM THAT WORKS BOTH ONLINE AND OFFLINE. THE APPLICATION SHOULD SUPPORT PUSH NOTIFICATIONS TO ENGAGE USERS AND PROVIDE IMPORTANT UPDATES. IMPLEMENT SERVICE WORKERS FOR BACKGROUND PROCESSING AND USE THE CACHE API TO STORE IMPORTANT FILES SO THAT THE APPLICATION CAN WORK EVEN WITHOUT INTERNET CONNECTIVITY. ENSURE THE USER INTERFACE IS RESPONSIVE SO THAT IT WORKS SMOOTHLY ON DIFFERENT DEVICES SUCH AS MOBILE PHONES, TABLETS, AND DESKTOPS. USE A BACKEND FRAMEWORK SUCH AS NODE.JS AND STORE DATA IN A DATABASE LIKE MONGODB OR POSTGRESQL.
